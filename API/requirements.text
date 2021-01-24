@@ -1,0 +1,20 @@
+certifi==2020.12.5
+click @ file:///home/linux1/recipes/ci/click_1610990599742/work
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2 @ file:///home/linux1/recipes/ci/jinja2_1610990516718/work
+joblib @ file:///tmp/build/80754af9/joblib_1607970656719/work
+MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+mkl-fft==1.2.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603468620949/work
+pandas @ file:///C:/ci/pandas_1611178799982/work
+python-dateutil==2.8.1
+pytz @ file:///tmp/build/80754af9/pytz_1608922264688/work
+scikit-learn @ file:///C:/ci/scikit-learn_1598376983131/work
+scipy @ file:///C:/ci/scipy_1597686737426/work
+six @ file:///C:/ci/six_1605205426665/work
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+Werkzeug==1.0.1
+wincertstore==0.2

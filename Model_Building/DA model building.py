@@ -30,13 +30,21 @@ reg=LinearRegression()
 reg.fit(X_train,y_train)
 
 #random forest model building'
-random_f = RandomForestRegressor()
-random_f.fit(X_train,y_train)
+classifier = RandomForestRegressor()
+classifier.fit(X_train,y_train)
 
 re_prec=reg.predict(X_test)
-ra_prec=random_f.predict(X_test)
+ra_prec=classifier.predict(X_test)
 #evaluating the accuracy of the models
 maer=mean_absolute_error(y_test,re_prec)
-maerf=mean_absolute_error(y_test,ra_prec)
+maerf=mean_absolute_error(y_test,classifier)
 
 #random forest has less MAE score which shows this is more accurate model than linear regression
+import pickle
+pickl = {'model':classifier }
+pickle.dump( pickl, open( 'classifier' + ".p", "wb" ) )
+
+file_name = "classifier.p"
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    model = data['model']
